@@ -1,15 +1,16 @@
 
 # Tanım
 
-**Just-In-Time Compiler (JIT)**, .NET’te **[[02-Intermediate Language (IL)]]** kodunu **çalışma anında makine koduna çeviren derleyicidir**.
+**Just-In-Time Compiler (JIT)**, .NET’te **[IL](02-il)** kodunu **çalışma anında makine koduna çeviren derleyicidir**.
 
-JIT, **[[01-Common Language Runtime (CLR)]]] içinde çalışan bir bileşendir** ve CPU’nun çalıştırabileceği **native machine code** üretir.
+JIT, **[CLR](01-clr.md) içinde çalışan bir bileşendir** ve CPU’nun çalıştırabileceği **native machine code** üretir.
 
 ---
 # Diyagram
 
 .NET uygulaması çalışırken kod şu aşamalardan geçer:
-![[Net Mimarisi.png|319]]
+<img src="../diagrams/dotnet-architecture.png" alt="dotnet architecture" width="367">
+
 Özetle:
 - C# → **IL**
 - IL → **JIT tarafından Machine Code**

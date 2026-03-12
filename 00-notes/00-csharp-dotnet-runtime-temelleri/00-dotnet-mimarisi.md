@@ -3,11 +3,15 @@
 
 .NET, farklı programlama dillerinin **aynı runtime üzerinde çalışmasını sağlayan bir platformdur**.
 Temel bileşenleri:
-- [[01-Common Language Runtime (CLR)]]
+- [01-clr](01-clr.md)
 - Common Type System (CTS)
 - Common Language Specification(CLS)
 - Base Class Library (BCL)
-![[NET Mimarisi_2.png|323]]
+
+
+<img src="../diagrams/dotnet-architecture2.png" alt="dotnet architecture2" width="367">
+
+
 ---
 # Common Language Runtime (CLR)
 
@@ -24,7 +28,7 @@ Görevleri:
 
 Kodun çalışma süreci:
 
-![[Net Mimarisi.png|373]]
+<img src="../diagrams/dotnet-architecture.png" alt="dotnet architecture" width="367">
 
 CLR kısaca **.NET uygulamasının execution engine’idir.**
 
