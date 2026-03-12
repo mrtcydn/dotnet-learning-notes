@@ -1,0 +1,42 @@
+# -----------------------------
+# Obsidian
+# -----------------------------
+.obsidian/cache
+.obsidian/workspace.json
+.obsidian/workspace
+.obsidian/graph.json
+.obsidian/plugins/*
+!.obsidian/plugins/obsidian-git
+!.obsidian/plugins/readwise-official
+.obsidian/workspace-mobile.json
+
+# -----------------------------
+# OS Files
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Temporary / Trash
+# -----------------------------
+.trash
+*.tmp
+*.log
+
+# -----------------------------
+# VS / IDE optional files
+# -----------------------------
+.vscode/*
+!.vscode/settings.json
+
+# -----------------------------
+# Node / misc (sometimes used by plugins)
+# -----------------------------
+node_modules/
+
+# -----------------------------
+# Build artifacts (if any .NET projects appear later)
+# -----------------------------
+bin/
+obj/
