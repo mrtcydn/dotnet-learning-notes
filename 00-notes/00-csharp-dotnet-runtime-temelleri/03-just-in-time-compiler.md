@@ -1,12 +1,16 @@
+---
+aliases: [JIT]
+---
 
-# Tanım
+# **Just-In Time Compiler (JIT)**
+## Tanım
 
-**Just-In-Time Compiler (JIT)**, .NET’te **[IL](02-il)** kodunu **çalışma anında makine koduna çeviren derleyicidir**.
+**Just-In-Time Compiler (JIT)**, .NET’te **[IL](02-intermediate-language.md)** kodunu **çalışma anında makine koduna çeviren derleyicidir.**
 
-JIT, **[CLR](01-clr.md) içinde çalışan bir bileşendir** ve CPU’nun çalıştırabileceği **native machine code** üretir.
+JIT, **[CLR](01-common-language-runtime.md) içinde çalışan bir bileşendir** ve CPU’nun çalıştırabileceği **native machine code** üretir.
 
 ---
-# Diyagram
+## Diyagram
 
 .NET uygulaması çalışırken kod şu aşamalardan geçer:
 <img src="../diagrams/dotnet-architecture.png" alt="dotnet architecture" width="367">
@@ -16,7 +20,7 @@ JIT, **[CLR](01-clr.md) içinde çalışan bir bileşendir** ve CPU’nun çalı
 - IL → **JIT tarafından Machine Code**
 
 ---
-# JIT Nasıl Çalışır?
+## JIT Nasıl Çalışır?
 
 JIT tüm programı bir anda derlemez.
 **Method bazlı çalışır.**
@@ -37,7 +41,7 @@ void Calculate()
 `Calculate()` methodu ilk çağrıldığında JIT compile edilir.
 
 ---
-# JIT’in Avantajları
+## JIT’in Avantajları
 
 Platform Bağımsızlık
 IL platform bağımsızdır.
@@ -48,7 +52,7 @@ JIT çalıştığı platforma göre makine kodu üretir.
 - Linux → farklı machine code
 
 ---
-# Runtime Optimizasyonu
+## Runtime Optimizasyonu
 
 JIT çalışma anında optimizasyon yapabilir.
 
@@ -58,7 +62,7 @@ JIT çalışma anında optimizasyon yapabilir.
 - Dead code kaldırabilir
 
 --- 
-# JIT Türleri
+## JIT Türleri
 
 #### **1) Normal JIT**
 
@@ -77,7 +81,7 @@ Memory tasarrufu için kullanılan eski bir JIT türüdür.
 Modern .NET’te pek kullanılmaz.
 
 ---
-# JIT Cache
+## JIT Cache
 
 JIT compile edilen methodlar memory’de tutulur.
 Bu sayede:
@@ -85,7 +89,7 @@ Bu sayede:
 - Performans artar
 
 ---
-# Örnek
+## Örnek
 
 ```csharp
 int x = 10;  
@@ -108,7 +112,7 @@ call WriteLine
 ```
 
 ---
-# Özet
+## Özet
 
 - JIT = **runtime compiler**
 - IL → Machine Code dönüşümünü yapar

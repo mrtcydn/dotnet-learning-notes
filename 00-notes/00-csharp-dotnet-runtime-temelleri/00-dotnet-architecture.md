@@ -1,10 +1,11 @@
 
-# Tanım
+# **.NET Mimarisi**
+## Tanım
 
 .NET, farklı programlama dillerinin **aynı runtime üzerinde çalışmasını sağlayan bir platformdur**.
 Temel bileşenleri:
-- [01-clr](01-clr.md)
-- Common Type System (CTS)
+- [CLR](01-common-language-runtime.md)
+- Common Type System (CTS) 
 - Common Language Specification(CLS)
 - Base Class Library (BCL)
 
@@ -13,7 +14,7 @@ Temel bileşenleri:
 
 
 ---
-# Common Language Runtime (CLR)
+## Common Language Runtime (CLR)
 
 **CLR**, .NET uygulamalarının çalıştığı **runtime ortamıdır**.
 
@@ -33,7 +34,7 @@ Kodun çalışma süreci:
 CLR kısaca **.NET uygulamasının execution engine’idir.**
 
 ---
-# CTS (Common Type System)
+## CTS (Common Type System)
 
 **CTS**, .NET içindeki tüm veri tiplerinin nasıl tanımlandığını belirleyen sistemdir.
 
@@ -79,7 +80,7 @@ array
 ```
 
 ---
-# Common Language Specification (CLS)
+## Common Language Specification (CLS)
 
 **CLS**, .NET dillerinin birbirleriyle uyumlu çalışabilmesi için belirlenen **kurallar setidir**.
 
@@ -140,7 +141,7 @@ Bu method CLS uyumlu değil ama bilinçli yaptım. **Önerilmez!!!!**
 
 
 --- 
-# Base Class Library (BCL)
+## Base Class Library (BCL)
 
 **BCL**, .NET’in standart kütüphanesidir.
 Temel sınıfları içerir.
@@ -164,7 +165,7 @@ Bu aslında **BCL içindeki bir class’tır.**
 
 ---
 
-# Özet
+## Özet
 
 **CLR**
 - Runtime ortamıdır
@@ -182,7 +183,7 @@ Bu aslında **BCL içindeki bir class’tır.**
 
 ---
 
-# Mülakat Sorusu
+## Mülakat Sorusu
 
 Soru:
 - CTS ile CLS arasındaki fark nedir?

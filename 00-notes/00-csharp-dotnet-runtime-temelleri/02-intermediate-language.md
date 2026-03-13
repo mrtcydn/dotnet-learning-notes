@@ -1,22 +1,26 @@
-# Tanım
+---
+aliases: [IL]
+---
+# **Intermediate Language (IL)**
+## Tanım
 
 - .Net dillerinin derlendikten sonra dönüştürüldüğü ara koddur.
 -  C# , F# , VB.NET gibi diller doğrudan makine koduna değil, önce IL'e çevrilir.
-- Bu IL kodu daha sonra [01-clr](01-clr.md) tarafından çalıştırılır. 
+- Bu IL kodu daha sonra [01-common-language-runtime](01-common-language-runtime.md) tarafından çalıştırılır. 
 ---
-# Amacı
+## Amacı
 
 - .NET dillerini platformdan bağımsız yapmak
 - Tüm .NET dillerinin aynı runtime üzerinde çalışmasını sağlamak
 - Kodun optimize edilmesini sağlamak
 - Güvenli çalıştırma ortamı oluşturmak
 ---
-# Diyagram
+## Diyagram
 
 <img src="../diagrams/dotnet-architecture.png" alt="dotnet architecture" width="367">
 
 ---
-# C# Kodunun IL'e Çevrilmesi
+## C# Kodunun IL'e Çevrilmesi
 
 ```csharp
 int x = 10;  
@@ -42,7 +46,7 @@ call void [System.Console]System.Console::WriteLine(int32)
 ```
 
 ---
-# IL Nerede Saklanır?
+## IL Nerede Saklanır?
 
 - IL kodu **assembly** içinde saklanır.
 - Assembly = .dll  , .exe
@@ -52,7 +56,7 @@ call void [System.Console]System.Console::WriteLine(int32)
 	- Assembly manifest
 
 ---
-# Metadata Nedir?
+## Metadata Nedir?
 
 IL yanında şu bilgiler bulunur:
 - class bilgileri
@@ -61,7 +65,7 @@ IL yanında şu bilgiler bulunur:
 - type bilgileri
 
 ---
-# IL Nasıl Görülür?
+## IL Nasıl Görülür?
 
 IL'i incelemek için birkaç araç vardır.
 ##### 1) ILDasm
@@ -80,11 +84,11 @@ Debug ve IL inceleme aracı.
 
 ---
 
-# ÖZET
+## ÖZET
 
 - IL, .NET dillerinin compile edildiği **ara koddur**
 - IL, **platform bağımsızdır**
 - CLR tarafından çalıştırılır
-- [JIT](03-jit.md)  tarafından **machine code'a çevrilir**
+- [JIT](03-just-in-time-compiler.md)  tarafından **machine code'a çevrilir**
 - Assembly içinde **IL + Metadata** bulunur
 - IL **stack tabanlıdır**
